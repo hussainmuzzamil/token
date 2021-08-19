@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 //rename the file to Tokin.sol before compiling
 //mapping function demo using the mapping funtion and msg.sender varriable. 
+//will see transfer fundtion in next sample
 
 pragma solidity ^0.8.6;
 

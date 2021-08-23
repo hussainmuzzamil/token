@@ -23,11 +23,11 @@ constructor (string memory _tokin_name, string memory _token_sybmol, uint _decim
     balanceOf[msg.sender] = total_suply; 
     }//end of constructor
 //transfer function    
-function transfer (address _from, address _to, uint256 _value )external returns (bool success){
+function transfer (address _to, uint256 _value )external returns (bool success){
     require(balanceOf[msg.sender]>= _value);
-    balanceOf[msg.sender] = balanceOf[_from] - (_value);
+    balanceOf[msg.sender] = balanceOf[msg.sender]- (_value);
     balanceOf[_to] = balanceOf[_to]+(_value);
-    emit Transfer(_to,_from, _value);
+    emit Transfer(msg.sender,_to, _value);
     return true;
 
 }//end of transfer function

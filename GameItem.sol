@@ -1,8 +1,9 @@
 // contracts/GameItem.sol
 // SPDX-License-Identifier: MIT
-//same code from https://github.com/OpenZeppelin
+//sample code from https://github.com/OpenZeppelin
 pragma solidity ^0.8.6;
 
+//please add accordingly 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
